@@ -7,14 +7,14 @@ if (selectedOption) {
     let userAnswer = selectedOption.value;
     console.log('user selected:',userAnswer);
     if (userAnswer === correctAnswer){
-        console.log("corect! Well done.");
+        document.getElementById("feedback").textContent = "Correct! Well done.";
     }
     else {
-        console.log("That's incorrect. Try again!");
+        document.getElementById("feedback").textContent = "That's incorrect. Try again!";
     }
 }
     else {
-        console.log("Please select an answer.");
+        document.getElementById("feedback").textContent = "Please select an answer.";
     }
 }
 
