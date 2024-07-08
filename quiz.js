@@ -11,13 +11,9 @@ if (selectedOption) {
     }
     else {
         console.log("That's incorrect. Try again!");
-    } 
-}
-    else {
-        console.log("Please select an answer.");
     }
 }
-
+}
 let submitButton = document.getElementById("submit-answer");
 submitButton.addEventListener("click", checkAnswer);
 
